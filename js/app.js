@@ -28,92 +28,92 @@ const app = {
         {
             name: 'Cánh Đồng Yêu Thương',
             singer: 'Trung Quân',
-            path: '../asseet/audio/CanhDongYeuThuong-TrungQuanIdol-4694272.mp3',
-            image: '../asseet/img/trungquan.jpg',
+            path: '../assets/audio/CanhDongYeuThuong-TrungQuanIdol-4694272.mp3',
+            image: '../assets/img/trungquan.jpg',
 
         },
         {
             name: 'TÌnh Nào Không Như TÌnh Đầu',
             singer: 'Trung Quân',
-            path: '../asseet/audio/TinhNaoKhongNhuTinhDau-TrungQuanIdol-6588171.mp3',
-            image: '../asseet/img/trungquan.jpg',
+            path: '../assets/audio/TinhNaoKhongNhuTinhDau-TrungQuanIdol-6588171.mp3',
+            image: '../assets/img/trungquan.jpg',
 
         },
         {
             name: 'Về Quê Ăn Tết',
             singer: 'PhuSaf',
-            path: '../asseet/audio/VeQueAnTet-PhuSaFMBand-6201051.mp3',
-            image: '../asseet/img/antet.jpg',
+            path: '../assets/audio/VeQueAnTet-PhuSaFMBand-6201051.mp3',
+            image: '../assets/img/antet.jpg',
 
         },
         {
             name: 'Cầu Hôn',
             singer: 'Văn Mai Hương',
-            path: '../asseet/audio/CauHon-VanMaiHuong-5849944.mp3',
-            image: '../asseet/img/vanmaihuong.jpg',
+            path: '../assets/audio/CauHon-VanMaiHuong-5849944.mp3',
+            image: '../assets/img/vanmaihuong.jpg',
 
         },
         {
             name: 'Chia Tay',
             singer: 'Bùi Anh Tuấn',
-            path: '../asseet/audio/ChiaTay-BuiAnhTuan-5183978.mp3',
-            image: '../asseet/img/anhtuan.jpg',
+            path: '../assets/audio/ChiaTay-BuiAnhTuan-5183978.mp3',
+            image: '../assets/img/anhtuan.jpg',
 
         },
         {
             name: 'Cô Gái Ngày Hôm Qua',
             singer: 'Vũ Cát Tường',
-            path: '../asseet/audio/CoGaiNgayHomQua-VuCatTuong-5958575.mp3',
-            image: '../asseet/img//vucactuong.jpg',
+            path: '../assets/audio/CoGaiNgayHomQua-VuCatTuong-5958575.mp3',
+            image: '../assets/img//vucactuong.jpg',
 
         },
         {
             name: 'Cưới Thoi',
             singer: 'Masew - Bray',
-            path: '../asseet/audio/CuoiThoi-MasewMasiuBRayTAPVietNam-7085648.mp3',
-            image: '../asseet/img/bray.jpg',
+            path: '../assets/audio/CuoiThoi-MasewMasiuBRayTAPVietNam-7085648.mp3',
+            image: '../assets/img/bray.jpg',
 
         },
         {
             name: 'Đế Vương',
             singer: 'Đình Dũng ACV',
-            path: '../asseet/audio/DeVuong-DinhDungACV-7121634.mp3',
-            image: '../asseet/img/devuong.jpg',
+            path: '../assets/audio/DeVuong-DinhDungACV-7121634.mp3',
+            image: '../assets/img/devuong.jpg',
 
         },
         {
             name: 'Đường Một Chiều',
             singer: 'Huỳnh Tú',
-            path: '../asseet/audio/DuongMotChieu-HuynhTu-4615451.mp3',
-            image: '../asseet/img/huynhtu.jpg',
+            path: '../assets/audio/DuongMotChieu-HuynhTu-4615451.mp3',
+            image: '../assets/img/huynhtu.jpg',
 
         },
         {
             name: 'Nghe Nói Anh Sắp Kết Hôn Rồi',
             singer: 'Văn Mai Hương - Bùi Anh Tuấn',
-            path: '../asseet/audio/NgheNoiAnhSapKetHon-VanMaiHuongBuiAnhTuan-6129764.mp3',
-            image: '../asseet/img/vanmaihuong.jpg',
+            path: '../assets/audio/NgheNoiAnhSapKetHon-VanMaiHuongBuiAnhTuan-6129764.mp3',
+            image: '../assets/img/vanmaihuong.jpg',
 
         },
         {
             name: 'Nơi Tình Yêu Bắt Đầu',
             singer: 'Bùi Anh Tuấn',
-            path: '../asseet/audio/NoiTinhYeuBatDau-BuiAnhTuan-1915267.mp3',
-            image: '../asseet/img/anhtuan.jpg',
+            path: '../assets/audio/NoiTinhYeuBatDau-BuiAnhTuan-1915267.mp3',
+            image: '../assets/img/anhtuan.jpg',
 
         },
         {
             name: 'Thuận Theo Ý Trời',
             singer: 'Bùi Anh Tuấn',
-            path: '../asseet/audio/ThuanTheoYTroi-BuiAnhTuan-6150266.mp3',
-            image: '../asseet/img/anhtuan.jpg',
+            path: '../assets/audio/ThuanTheoYTroi-BuiAnhTuan-6150266.mp3',
+            image: '../assets/img/anhtuan.jpg',
 
         },
         {
             name: 'Vết Mưa',
             singer: 'Vũ Cát Tường',
-            path: '../asseet/audio/VetMua-VuCatTuong-5959421.mp3',
-            image: '../asseet/img/vucactuong.jpg',
+            path: '../assets/audio/VetMua-VuCatTuong-5959421.mp3',
+            image: '../assets/img/vucactuong.jpg',
 
         },
 
