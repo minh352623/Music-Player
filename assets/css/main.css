@@ -1,6 +1,20 @@
 :root {
     --primary-color: #ec1f55;
     --text-color: #333;
+    --bg-color-primary: #f5f5f5;
+    --bg-color-secondary: #fff;
+    --bg-toggle-btn: #888;
+    --box-shadow: rgba(100, 100, 110, 0.2) 0px 8px 28px 0px;
+
+}
+
+[data-theme="dark"] {
+    --primary-color: #7200a1;
+    --text-color: #d4d5d6;
+    --bg-color-primary: #18191a;
+    --bg-color-secondary: #242526;
+    --bg-toggle-btn: #4e4f50;
+    --box-shadow: rgba(83, 81, 81, 0.2) 0px 8px 28px 0px;
 }
 
 * {
@@ -10,7 +24,7 @@
 }
 
 body {
-    background-color: #f5f5f5;
+    background-color: var(--bg-color-primary);
 }
 
 html {
@@ -38,12 +52,14 @@ html {
 
 .dashboard {
     padding: 16px 16px 14px;
-    background-color: #fff;
+    background-color: var(--bg-color-primary);
     position: fixed;
     top: 0;
     width: 100%;
     max-width: 480px;
-    border-bottom: 1px solid #ebebeb;
+    /* border: 1px solid #f5f5f5; */
+    box-shadow: var(--box-shadow);
+
 }
 
 /* HEADER */
@@ -73,7 +89,7 @@ header h2 {
     width: 100%;
     padding-top: 100%;
     border-radius: 50%;
-    background-color: #333;
+    background-color: var(--text-color);
     background-size: cover;
     margin: auto;
 
@@ -84,9 +100,11 @@ header h2 {
     display: flex;
     align-items: center;
 }
+
 .btn {
     cursor: pointer;
 }
+
 .control {
     display: flex;
     align-items: center;
@@ -95,7 +113,7 @@ header h2 {
 }
 
 .control .btn {
-    color: #666;
+    color: var(--text-color);
     padding: 18px;
     font-size: 18px;
 }
@@ -110,7 +128,7 @@ header h2 {
     height: 56px;
     border-radius: 50%;
     font-size: 24px;
-    color: #fff;
+    color: var(--bg-color-secondary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +136,7 @@ header h2 {
 }
 
 .progress {
-    width: 100%;
+    width: 80%;
     -webkit-appearance: none;
     height: 6px;
     background: #d3d3d3;
@@ -127,6 +145,12 @@ header h2 {
     -webkit-transition: 0.2s;
     transition: opacity 0.2s ease;
     margin: 0 20px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.progress:hover{
+    height:10px;
 }
 
 .progress::-webkit-slider-thumb {
@@ -138,6 +162,18 @@ header h2 {
     cursor: pointer;
     border-radius: 50%;
     cursor: pointer;
+    box-shadow: -420px 0 0 420px var(--primary-color);
+    
+}
+.progress::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius:50%;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    top: 100px;
 }
 
 /* PLAYLIST */
@@ -153,7 +189,7 @@ header h2 {
     display: flex;
     align-items: center;
     margin-bottom: 12px;
-    background-color: #fff;
+    background-color: var(--bg-color-secondary);
     padding: 8px 16px;
     border-radius: 5px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
@@ -164,6 +200,7 @@ header h2 {
 .song.active {
     background-color: var(--primary-color);
     animation: identifier ease 0.3s;
+    color: var(--text-color);
 
 }
 
@@ -185,7 +222,7 @@ header h2 {
 .song.active .option,
 .song.active .author,
 .song.active .title {
-    color: #fff;
+    color: var(--bg-color-secondary);
 }
 
 .song .thumb {
@@ -213,6 +250,53 @@ header h2 {
 
 .song .option {
     padding: 16px 8px;
-    color: #999;
+    color: var(--text-color);
     font-size: 18px;
+}
+
+#togle-btn {
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: var(--bg-toggle-btn);
+    box-shadow: var(--box-shadow);
+    position: fixed;
+    top: 10px;
+    right: 35%;
+    z-index: 1;
+}
+@media (max-width: 739px) {
+    #togle-btn {
+        width: 40px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: var(--bg-toggle-btn);
+        box-shadow: var(--box-shadow);
+        position: fixed;
+        top: 10px;
+        right: 3%;
+        z-index: 1;
+    }
+}
+
+#togle-btn::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+    width: 15px;
+    height: 15px;
+    background-color: var(--bg-color-secondary);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.35s;
+}
+
+#togle-btn.active::before {
+    transform: translateX(20px);
+}
+.controlTime-right,
+.controlTime-left {
+    width:10%;
+    color: var(--text-color);
 }

@@ -217,6 +217,9 @@ const app = {
                 const propressPercent = Math.floor(audio.currentTime / audio.duration * 100);
                 input.value = propressPercent;
 
+                // input.style.width=`${propressPercent}%`;
+                
+
                 //gán time cho 2 đầu input
                 //bên trái
                 var time = Math.floor(audio.currentTime);
@@ -244,7 +247,7 @@ const app = {
         //xử lý khi tua bài hát
 
         input.oninput = function (e) {
-            const seekTime = e.target.value * audio.duration / 100;
+            const seekTime =  audio.duration / 100 * e.target.value ;
             audio.currentTime = seekTime;
         }
         // khi next bái hát
@@ -324,6 +327,24 @@ const app = {
                 }
             }
         }
+        //dark  mode
+        window.onload = function () {
+            const themeBtn = document.getElementById('togle-btn');
+            themeBtn.addEventListener('click', function () {
+              // Lấy thuộc tính data-theme
+              const root = document.querySelector(':root');
+              const isLightMode =
+                root.getAttribute('data-theme') === 'dark' ? false : true;
+              // toggle theme mode
+              if (isLightMode) {
+                root.setAttribute('data-theme', 'dark');
+              } else {
+                root.setAttribute('data-theme', 'light');
+              }
+              // thay đổi vị trí của button
+              this.classList.toggle('active');
+            });
+          };
 
     },
     loadConfig: function () {
@@ -376,7 +397,7 @@ const app = {
 
             });
 
-        }, 100)
+        },0)
     },
 
     start: function () {
