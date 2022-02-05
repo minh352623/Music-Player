@@ -120,7 +120,7 @@ header h2 {
 
 .control .btn.active {
     color: var(--primary-color);
-    transition: all ease 0.8s;
+    transition: all ease 0.1s;
 }
 
 .control .btn-toggle-play {
